@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Form Pendaftaran SIB</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List</title>
+        <link rel="stylesheet" href="../Assets/todolist.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" type="text/css" href="../Assets/Style.css">
     </head>
     <body>
@@ -13,7 +19,7 @@
             </table>
             <hr>
         </header>
-    
+
         <nav>
             <center>
                 <p><a href="../index.html">Homepage</a> || <a href="heading.html">Heading</a></p>
@@ -25,43 +31,21 @@
                 <p><a href="fundamental.html">Fundamental Js</a> || <a href="array.html">Data Mahasiswa</a></p>
                 <p><a href="todolist.html">ToDo List</a></p>
             </center>
+            <hr>
         </nav>
-
         <article>
-            <h1 style="text-align:center;">Formulir Pendaftaran SIB 2023</h1>
-    
-                <br>
-                <form>
-                <p>Nama : <input nama="masukan nama lengkap"></p>
-                <p>Email : <input email="alamat email"></p>
-                <p>Nomor Hp : <input nomor hp="nomor hp"></p>
-        
-                <br>
-                <p>Jenis Kelamin</p>
-                <p><input type="radio" name="gender" value="L"> Laki - Laki</p>
-                <p><input type="radio" name="gender" value="P"> Perempuan</p>
-
-           
-                <br>
-                <p>Jurusan</p>
-                <select name="previous school">
-                    <option value="IT">Teknik Infomatika</option>
-                    <option value="Ak">Akuntansi</option>  
-                </select>  
-            
-        
-                <br>
-                <br>
-                <p>Alamat</p>
-                        <textarea name="Alamat">Masukan Alamat</textarea>
-               
-                <br>
-                <br>
-                <p>Foto</p>
-                <input type="file" accept="image/*">
-                <p><input type="submit">Daftar</input></p>
-                </form>
-        </article> 
-           
+            <h1 class="title">
+                ToDo List
+            </h1>
+            <div class="todo-list">
+                <div class="list-head">
+                    <input type="text" class="entered-list">
+                    <button class="add-list">Add</button>
+                </div>
+            <div class="tasks">
+            </div>
+            </div>
+                <script src="../javascript/todolist.js"></script>
+        </article>
     </body>
 </html>
